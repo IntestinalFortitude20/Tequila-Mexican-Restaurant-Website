@@ -1,0 +1,545 @@
+/*CSS RESET*/
+body, nav, main, footer, ul, h1, h3, img, form, aside, figure, figcaption  {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: #EFDBA7; /*Looking for sort of a flour tortilla color*/
+}
+
+/*HEADER STYLE RULES*/
+header {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(252, 255, 134); /*This is the color of the font on the sign outside*/
+    background-color: rgb(183, 0, 0); /*This is the color of the sign background and the walls inside*/
+}
+
+    header h1 {
+        font-family: 'Sofia', 'Flamenco', Verdana, cursive;
+        padding-top: 2%; /*Done this way to keep the spacing consistent between h1 and h3 elements*/
+    }
+
+    header h3 {
+        font-family: 'Flamenco', 'Sofia', Verdana, cursive;
+        padding-bottom: 2%; /*Done this way to keep the spacing consistent between h1 and h3 elements*/
+    }
+
+/*NAV STYLE RULES*/
+
+.mobile-nav a { /*styles for links to the other pages*/
+    display: block;
+    font-family: 'Flamenco', 'Sofia', Verdana, cursive;
+    color: rgb(252, 255, 134); /*Same yellow color as h1 and h3 elements*/
+    background-color: rgb(183, 0, 0);
+    text-align: center;
+    font-size: 2em; /*Font size for the a tag links to other webpages*/
+    text-decoration: none;
+    padding: 3%;
+    border-top: 1px solid rgb(252, 255, 134);
+}
+
+.mobile-nav a.menu-icon { /*styles for the Hamburger button*/
+    display: block;
+    font-size: 2.5em; /*Font size for the hamburger icon itself*/
+    position: absolute;
+    right: 2%;
+    top: 1%;
+    border: none; /*this was to compensate for the border-top property from the a tag section*/
+}
+
+/*HERO IMAGE STYLE RULES*/
+#img-container {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/*TEQUILA LOGO AT THE TOP OF THE PAGE*/
+#logo { /*I switch from the h1 and h3 tags to the image because this is their actual business sign*/
+    max-width: 60%;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+#hero {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#order-online {
+    position: absolute;
+    max-width: 24%;
+    transform: rotate(20deg);
+    right: 5vw;
+    top: 7vw;
+}
+
+#like-us {
+    position: absolute;
+    max-width: 25%;
+    transform: rotate(-23deg);
+    left: 7vw; /*or switch these to right and bottom*/
+    top: 8.5vw;
+}
+
+/*MAIN STYLE RULES*/
+main {
+    padding: 2%;
+    text-align: center;
+    overflow: auto;
+    font-family: 'Flamenco', 'sans-serif', 'Times New Roman';
+}
+
+main p {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#hours {
+    background-color: rgb(183, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.25em;
+    border: 3px double rgb(0, 0, 0);
+    width: 80%;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#contact {
+    background-color: rgb(183, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+    #contact a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 5%;
+        width: 100%;
+
+    }
+
+#project_files a {
+    display: block;
+    margin: 2% auto;
+    max-width: 120px;
+    
+}
+
+/*TABLE STYLE RULES ON MENU PAGE*/
+table {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+}
+
+table #dinner {
+    position: absolute;
+    left: 0;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    font-size: 2em;
+    border-bottom: 3px inset rgb(0,0,0);
+}
+
+th, td {
+    text-align: left;
+}
+
+th, td.price {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#tacos .item {
+    width: 70%;
+}
+
+#tacos .each {
+    width: 30%;
+}
+
+#gorditas .item, #tortas .item, #burritos .item, #dinners .item, #lunch .item, #desayunos .item {
+    width: 80%;
+}
+
+#especialidades .item {
+    width: 70%;
+}
+
+#bebidas .item {
+    width: 60%;
+}
+
+span {
+    color: rgb(183, 0, 0);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/*GALLERY FLEX-CONTAINER, FIGURE, FIGCAPTION AND ASIDE STYLE RULES*/
+aside {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 2%;
+    color: rgb(47, 34, 30);
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.flex-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+    figure {
+        position: relative;
+        max-width: 100%;
+        padding: 0;
+        margin: 2% auto;
+        border: 10px solid rgb(47, 34, 30);
+    }
+
+    figure img {
+        display: block;
+        /*This is to eliminate a little extra space that shows up below the image element 
+          to account for the descender characters, or some extra space left for another 
+          element.  Whichever the case, you can remove this to see what it does to the 
+          image within the figure element.*/
+    }
+
+    figcaption {
+        position: absolute;
+        width: 100%;
+        text-align: left;
+        padding-left: 5px;
+        bottom: 0;
+        line-height: 1.5em;
+        
+        color: #fff;
+        background: linear-gradient(to right, rgba(1, 101, 70, 0.5) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(209, 33, 51, 0.5) 100%);
+        /*The background colors are taken from the  U.S. State Department's image of the
+          Mexican flag on their website.*/
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+
+/*FORM ELEMENTS STYLE RULES*/
+fieldset, input {
+    margin-bottom: 2%;
+}
+
+fieldset {
+    text-align: left;
+    border: 2px groove rgba(47, 34, 30, 0.5);
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding: 1%
+}
+
+#info input {
+    width: 80%;
+    max-width: 400px;
+}
+
+#radio label {
+    display: inline-block;
+}
+
+textarea {
+    width: 100%;
+    min-width: 50%;
+    min-height: 85px;
+}
+
+form #submit {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    font-size: 1.25em;
+}
+
+/*FOOTER STYLE RULES*/
+footer {
+    display: block;
+    text-align: center;
+    padding: 2%;
+    background-color: rgb(47, 34, 30);
+    /*color: rgba(255, 255, 255, 0.5);    /*white font with transparency*/
+    color: rgba(239, 219, 169, 0.75); /*same beige as used in the body, in rgba form for transparency*/
+    clear: left;
+}
+
+footer a {
+    color: rgba(239, 219, 169, 0.75); /*same beige as used in the body, in rgba form for transparency*/
+    font-weight: bold;
+}
+
+.social img {
+    padding: 0.5%;
+}
+
+/*VIDEO ELEMENT STYLE RULES (ABOUT PAGE)*/
+video {
+    width: 320px;
+    height: 240px;
+}
+
+/*MAP ELEMENT STYLE RULES (ABOUT PAGE)*/
+.map {
+    width: 95%;
+    height: 50%;
+    border: 5px solid rgb(47, 34, 30);
+}
+
+/*TABLE ELEMENTS STYLE RULES*/
+/*BOX SIZING STYLE RULES: applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+
+/*MOBILE VIEWPORT STYLE RULES*/
+    /*HIDE TAB-DESK CLASS*/
+.tab-desk, #menu-links {
+    display: none;
+}
+
+
+/* MEDIA QUERY FOR TABLET VIEWPORT*/
+@media screen and (min-width: 550px), print {
+    /*TABLET VIEWPORT: SHOW TAB-DESK-NAV CLASS, HIDE MOBILE CLASS*/
+    .tab-desk, #logo {
+        display: block;
+    }
+
+    #logo { /*I switch from the h1 and h3 tags to the image because this is their actual business sign*/
+        max-width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+
+    /*TABLET VIEWPORT: HEADER STYLE RULES*/
+    header {
+        margin: 0;
+        padding: 0;
+    }
+
+        header h1, header h3 {
+            display: none;
+        }
+
+        header a {
+            display: block;
+            max-width: 330px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    
+
+
+    /*TABLET VIEWPORT: NAV STYLE RULES*/
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+        background-color: rgb(183, 0, 0);
+        border-top: 1px solid rgb(252, 255, 134); /*I thought these top and bottom borders looked nice together, rather than just the top border alone*/
+        border-bottom: 1px solid rgb(252, 255, 134);
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 1.5em; /*slightly smaller than the mobile links*/
+        border-right: 1px solid rgb(252, 255, 134);
+    }
+
+        nav li:last-child {
+            border-right: none;
+        }
+
+        nav li a {
+            display: block;
+            font-family: 'Flamenco', 'Sofia', Verdana, cursive;
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+            padding-left: 0.3em;
+            padding-right: 0.3em;
+            color: rgb(252, 255, 134);
+            text-align: center;
+            text-decoration: none;
+        }
+
+
+    /*TABLET VIEWPORT: VIDEO ELEMENT STYLE RULES (ABOUT PAGE)*/
+    video {
+        width: 440px;
+        height: 330px;
+    }
+
+
+    /*TABLET VIEWPORT: MAIN STYLE RULES*/
+    main {
+        padding: 5%;
+    }
+
+    #hours {
+        font-size: 1.5em;
+    }
+
+    /*TABLET VIEWPORT: MENU PAGE GRID*/
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    /*TABLET VIEWPORT: MAP STYLE RULES*/
+    .map {
+        width: 500px;
+        height: 450px;
+    }
+
+    /*TABLET VIEWPORT: FORM ELEMENTS STYLE RULES*/
+    form {
+        width: 70%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/*MEDIA QUERY FOR DESKTOP VIEWPORT*/
+@media screen and (min-width: 769px), print {
+
+    /*DESKTOP VIEWPORT: Style rule for header*/
+    header {
+        padding: 0%; /*slight increase to padding*/
+    }
+
+    /*DESKTOP VIEWPORT: Style rules for nav area*/
+    nav li a {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1.0em;
+        padding-right: 1.0em;
+    }
+
+        nav li a:hover {
+            color: rgb(183, 0, 0); /*reverse the colors for font and bg*/
+            background-color: rgb(252, 255, 134);
+            transform: scale(1.2);
+        }
+
+    #order-online:hover {
+        /*position: absolute;
+        max-width: 24%;
+        transform: rotate(20deg);*/
+        right: 4vw;
+        top: 6vw;
+        max-width: 27%;
+    }
+
+    #like-us:hover {
+        /*position: absolute;
+        max-width: 25%;
+        transform: rotate(-23deg);*/
+        left: 6vw; /*or switch these to right and bottom*/
+        top: 8vw;
+        max-width: 28%;
+    }
+
+    /*DESKTOP VIEWPORT: Style rules for main content*/
+
+    main p, main h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    /*DESKTOP VIEWPORT: VIDEO STYLE RULES (ABOUT PAGE) */
+    video {
+        width: 616px;
+        height: 462px;
+    }
+
+    /*DESKTOP VIEWPORT: MENU PAGE GRID*/
+    .grid {
+        grid-gap: 40px;
+
+    }
+
+    /*DESKTOP VIEWPORT: Style rules for table element*/
+
+    /*DESKTOP VIEWPORT: Style rules for form elements*/
+    label {
+        font-size: 1.25em;
+    }
+}
+    
+
+/*MEDIA QUERY FOR PRINT*/
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}

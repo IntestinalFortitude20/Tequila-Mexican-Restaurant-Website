@@ -1,0 +1,562 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tequila Mexican Restaurant: Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="StyleSheet2.css" rel="stylesheet" />
+
+    <!--Sophia and Flamenco Font Links from Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco&family=Sofia&display=swap" rel="stylesheet">
+
+    <!--Favicons-->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="images/apple-touch-icon.png" />
+    
+</head>
+
+<body>
+
+    <header>
+        <!--<h1>Tequila</h1>
+    <h3>Mexican Restaurant</h3> -->
+
+        <!--Image made to 75% actual size-->
+        <a href="index.html"><img id="logo" src="images/tequila-mexican-restaurant-logo.png" width="330" height="101" alt="Tequila Mexican Restaurant Sign" /></a>
+    </header>
+
+
+    <!--Mobile nav bar-->
+    <nav class="mobile-nav">
+
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="catering.html">Catering</a>
+            <a href="https://www.grubhub.com/restaurant/tequila-restaurant-6225-west-79th-street-burbank/1575668?affiliate=1185&amp;utm_source=bing-affiliate-network&amp;utm_medium=affiliate&amp;utm_campaign=1185&amp;utm_content=1575668">Order Now</a>
+        </div>
+
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+
+    </nav>
+
+
+    <!--Tab-Desk nav bar-->
+    <nav class="tab-desk">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="https://www.grubhub.com/restaurant/tequila-restaurant-6225-west-79th-street-burbank/1575668?affiliate=1185&amp;utm_source=bing-affiliate-network&amp;utm_medium=affiliate&amp;utm_campaign=1185&amp;utm_content=1575668" target="_blank">Order Now</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="grid">
+        <!--Menu related stuff like lunch specials and tables or sections for the menu-->
+
+        <table id="tacos">
+            <caption>Tacos</caption>
+            <tr><td colspan="3">Soft tacos served with lettuce and tomato or with cilantro and onion.  Dinner includes three tacos, rice, and beans.</td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <!-- Row 0 -->
+                <th class="item"></th>
+                <th class="each">Each</th>
+                <th class="dinner">Dinner</th>
+            </tr>
+            <tr>
+                <!-- Row 1 -->
+                <td class="item">Asada</td>
+                <td class="price">$2.60</td>
+                <td class="price">$9.99</td>
+            </tr>
+            <tr>
+                <!-- Row 2 -->
+                <td class="item">Chorizo</td>
+                <td class="price">$2.60</td>
+                <td class="price">$9.99</td>
+            </tr>
+            <tr>
+                <!-- Row 3 -->
+                <td class="item">Papa</td>
+                <td class="price">$2.60</td>
+                <td class="price">$9.99</td>
+            </tr>
+            <tr>
+                <!-- Row 4 -->
+                <td class="item">Picadillo</td>
+                <td class="price">$2.60</td>
+                <td class="price">$9.99</td>
+            </tr>
+            <tr>
+                <!-- Row 5 -->
+                <td class="item">Pastor</td>
+                <td class="price">$2.60</td>
+                <td class="price">$9.99</td>
+            </tr>
+            <tr>
+                <!-- Row 6 -->
+                <td class="item">Pollo</td>
+                <td class="price">$2.60</td>
+                <td class="price">$9.99</td>
+            </tr>
+            <tr>
+                <!-- Row 7 -->
+                <td class="item">Tripitas</td>
+                <td class="price">$3.25</td>
+                <td class="price">$12.99</td>
+            </tr>
+            <tr>
+                <!-- Row 8 -->
+                <td class="item">Chile Rilleno</td>
+                <td class="price">$3.25</td>
+                <td class="price">$12.99</td>
+            </tr>
+            <tr>
+                <!-- Row 9 -->
+                <td class="item">Lengua</td>
+                <td class="price">$3.25</td>
+                <td class="price">$12.99</td>
+            </tr>
+            <tr>
+                <!-- Row 10 -->
+                <td class="item">Pescado</td>
+                <td class="price">$3.25</td>
+                <td class="price">$12.99</td>
+            </tr>
+        </table>
+
+        <table id="gorditas">
+            <caption>Gorditas, Sopes, y Tostadas</caption>
+            <tr><td colspan="4">Served with your choice of meat, beans, cheese, lettuce, and tomato</td></tr>
+            <tr><td colspan="3"><span>ADD RICE AND BEANS, ADD $2.00!</span></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <!-- Row 1 -->
+                <td class="item">Asada</td>
+                <td class="price">$3.50</td>
+            </tr>
+            <tr>
+                <!-- Row 2 -->
+                <td class="item">Picadillo</td>
+                <td class="price">$3.50</td>
+            </tr>
+            <tr>
+                <!-- Row 3 -->
+                <td class="item">Rajas con Queso</td>
+                <td class="price">$3.50</td>
+            </tr>
+            <tr>
+                <!-- Row 4 -->
+                <td class="item">Frijoles con Queso</td>
+                <td class="price">$3.50</td>
+            </tr>
+            <tr>
+                <!-- Row 5 -->
+                <td class="item">Pastor</td>
+                <td class="price">$3.50</td>
+            </tr>
+            <tr>
+                <!-- Row 6 -->
+                <td class="item">Pollo</td>
+                <td class="price">$3.50</td>
+            </tr>
+        </table>
+
+        <table id="tortas">
+            <caption>Tortas</caption>
+            <tr><td colspan="3">Served with your choice of meat, beans, lettuce, sour cream, avocado, and tomato</td></tr>
+            <tr><td colspan="3"><span>ADD RICE AND BEANS, ADD $2.00!</span></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <!-- Row 1 -->
+                <td class="item">Asada</td>
+                <td class="price">$6.50</td>
+            </tr>
+            <tr>
+                <!-- Row 2 -->
+                <td class="item">Chorizo</td>
+                <td class="price">$6.50</td>
+            </tr>
+            <tr>
+                <!-- Row 3 -->
+                <td class="item">Picadillo</td>
+                <td class="price">$6.50</td>
+            </tr>
+            <tr>
+                <!-- Row 4 -->
+                <td class="item">Pastor</td>
+                <td class="price">$6.50</td>
+            </tr>
+            <tr>
+                <!-- Row 5 -->
+                <td class="item">Pollo</td>
+                <td class="price">$6.50</td>
+            </tr>
+            <tr>
+                <!-- Row 6 -->
+                <td class="item">Milanesa</td>
+                <td class="price">$6.50</td>
+            </tr>
+            <tr>
+                <!-- Row 7 -->
+                <td class="item">Hawaiiana</td>
+                <td class="price">$7.25</td>
+            </tr>
+        </table>
+
+        <table id="burritos">
+            <caption>Burritos & Chimichangas</caption>
+            <tr><td colspan="3">Large flour tortilla filled with your choice of meat, beans, cheese, lettuce, and tomato.</td></tr>
+            <tr><td colspan="3"><span>MAKE IT A CHIMICHANGA, ADD $1!</span></td></tr>
+            <tr><td colspan="3"><span>MAKE IT A COMBO, ADD $1.25!</span></td></tr>
+            <tr><td colspan="3"><span>MAKE IT A SUIZO, ADD $2.00!</span></td></tr>
+            <tr><td colspan="3"><span>ADD RICE AND BEANS, ADD $2.00!</span></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <!-- Row 1 -->
+                <td class="item">Asada</td>
+                <td class="price">$7.75</td>
+            </tr>
+            <tr>
+                <!-- Row 2 -->
+                <td class="item">Pastor</td>
+                <td class="price">$7.75</td>
+            </tr>
+            <tr>
+                <!-- Row 3 -->
+                <td class="item">Picadillo</td>
+                <td class="price">$7.75</td>
+            </tr>
+            <tr>
+                <!-- Row 4 -->
+                <td class="item">Pollo</td>
+                <td class="price">$7.75</td>
+            </tr>
+            <tr>
+                <!-- Row 5 -->
+                <td class="item">Chorizo</td>
+                <td class="price">$7.75</td>
+            </tr>
+            <tr>
+                <!-- Row 6 -->
+                <td class="item">Aguacate</td>
+                <td class="price">$7.75</td>
+            </tr>
+            <tr>
+                <!-- Row 7 -->
+                <td class="item">Papas</td>
+                <td class="price">$7.75</td>
+            </tr>
+            <tr>
+                <!-- Row 8 -->
+                <td class="item">Vegetariano</td>
+                <td class="price">$7.75</td>
+            </tr>
+            <tr>
+                <!-- Row 9 -->
+                <td class="item">Chile Rilleno</td>
+                <td class="price">$9.99</td>
+            </tr>
+            <tr>
+                <!-- Row 10 -->
+                <td class="item">a la Mexicana</td>
+                <td class="price">$8.00</td>
+            </tr>
+            <tr>
+                <!-- Row 11 -->
+                <td class="item">Lengua</td>
+                <td class="price">$10.99</td>
+            </tr>
+            <tr>
+                <!-- Row 12 -->
+                <td class="item">Pescado</td>
+                <td class="price">$10.99</td>
+            </tr>
+        </table>
+
+        <table id="desayunos">
+            <caption>Desayunos</caption>
+            <tr><td colspan="3">All of our homemade breakfasts are served with rice, and beans</td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <!-- Row 1 -->
+                <td class="item">Huevos a la Mexicana</td>
+                <td class="price">$7.50</td>
+            </tr>
+            <tr>
+                <!-- Row 2 -->
+                <td class="item">Huevos Rancheros</td>
+                <td class="price">$7.50</td>
+            </tr>
+            <tr>
+                <!-- Row 3 -->
+                <td class="item">Huevos con Chorizo</td>
+                <td class="price">$7.50</td>
+            </tr>
+            <tr>
+                <!-- Row 4 -->
+                <td class="item">Chilaquiles Verdes o Rojos</td>
+                <td class="price">$7.50</td>
+            </tr>
+            <tr>
+                <!-- Row 5 -->
+                <td class="item">Chilaquiles con Carne</td>
+                <td class="price">$10.50</td>
+            </tr>
+        </table>
+
+        <table id="lunch">
+            <caption>Lunch Specials</caption>
+            <tr><td colspan="3">All of our homemade lunch specials are served with rice, and beans</td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <!-- Row 1 -->
+                <td class="item">Enchiladas</td>
+                <td class="price">$10.00</td>
+            </tr>
+            <tr>
+                <!-- Row 2 -->
+                <td class="item">Taco Dinner</td>
+                <td class="price">$10.00</td>
+            </tr>
+            <tr>
+                <!-- Row 3 -->
+                <td class="item">Tostada Dinner</td>
+                <td class="price">$12.00</td>
+            </tr>
+            <tr>
+                <!-- Row 4 -->
+                <td class="item">Milanesa</td>
+                <td class="price">$10.00</td>
+            </tr>
+            <tr>
+                <!-- Row 5 -->
+                <td class="item">Combinaci&otilde;n</td>
+                <td class="price">$11.00</td>
+            </tr>
+            <tr>
+                <!-- Row 6 -->
+                <td class="item">Chiles Rillenos</td>
+                <td class="price">$11.00</td>
+            </tr>
+        </table>
+
+        <table id="dinners">
+            <caption>Dinners</caption>
+            <tr><td colspan="3">All of our homemade dinners are served with rice, beans, and salad</td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <!-- Row 1 -->
+                <td class="item">Carne a la Tampique&ntilde;a</td>
+                <td class="price">$16.00</td>
+            </tr>
+            <tr>
+                <!-- Row 2 -->
+                <td class="item">Carne Asada</td>
+                <td class="price">$14.00</td>
+            </tr>
+            <tr>
+                <!-- Row 3 -->
+                <td class="item">Bistec Ranchero</td>
+                <td class="price">$14.00</td>
+            </tr>
+            <tr>
+                <!-- Row 4 -->
+                <td class="item">Bistec a la Mexicana</td>
+                <td class="price">$14.00</td>
+            </tr>
+            <tr>
+                <!-- Row 5 -->
+                <td class="item">Fajitas de Carne Asada</td>
+                <td class="price">$14.00</td>
+            </tr>
+        </table>
+
+        <table id="especialidades">
+            <caption>Especialidades</caption>
+            <tr><td colspan="3">All of our homemade specials are erved with rice, beans, and salad</td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <!-- Row 1 -->
+                <td class="item">Fajitas de Pollo</td>
+                <td class="price">$14.00</td>
+            </tr>
+            <tr>
+                <!-- Row 2 -->
+                <td class="item">Flautas de Pollo</td>
+                <td class="price">$11.00</td>
+            </tr>
+            <tr>
+                <!-- Row 3 -->
+                <td id="menudo" class="menudo">Menudo</td>
+                <td id="menudo" class="price">Sm $8.00</td>
+                <td id="menudo" class="price">Lg $14.50</td>
+            </tr>
+        </table>
+
+        <table id="botanas">
+            <caption>Botanas</caption>
+            <tr><td colspan="3">Try some of our delicious appetizers!  Great for sharing with friends!</td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <!-- Row 1 -->
+                <td class="item">Nachos</td>
+                <td class="price">$7.75 | with meat $9.75</td>
+            </tr>
+            <tr>
+                <!-- Row 2 -->
+                <td class="item">Guacamole</td>
+                <td class="price">Md $7.50 | XL $14.50</td>
+            </tr>
+            <tr>
+                <!-- Row 3 -->
+                <td class="item">Quesadillas</td>
+                <td class="price">$7.75 | with meat $9.75</td>
+            </tr>
+            <tr>
+                <!-- Row 4 -->
+                <td class="item">Quesadilla Extra Grande</td>
+                <td class="price">$7.75 | with meat $9.75</td>
+            </tr>
+        </table>
+
+        <table id="bebidas">
+            <caption>Bebidas</caption>
+            <tr><td colspan="3">All of our homemade, authentic beverages are made fresh, daily</td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <!-- Row 1 -->
+                <td class="item">Horchata</td>
+                <td class="price">Md $2.00 | Lg $3.00</td>
+            </tr>
+            <tr>
+                <!-- Row 2 -->
+                <td class="item">Jamaica</td>
+                <td class="price">Md $2.00 | Lg $3.00</td>
+            </tr>
+            <tr>
+                <!-- Row 3 -->
+                <td class="item">Refrescos Mexicanos</td>
+                <td class="price">$2.50</td>
+            </tr>
+            <tr>
+                <!-- Row 4 -->
+                <td class="item">Topo Chico</td>
+                <td class="price">$2.50</td>
+            </tr>
+            <tr>
+                <!-- Row 5 -->
+                <td class="item">Can of Soda</td>
+                <td class="price">$1.50</td>
+            </tr>
+            <tr>
+                <!-- Row 6 -->
+                <td class="item">Bottled Water</td>
+                <td class="price">$1.15</td>
+            </tr>
+        </table>
+
+        <table id="extras">
+            <caption>Extras</caption>
+            <tr><td colspan="3">Try some of our delicious side dishes to make the perfect meal!</td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <!-- Row 1 -->
+                <td class="item">Chips</td>
+                <td class="price">$2.50</td>
+            </tr>
+            <tr>
+                <!-- Row 2 -->
+                <td class="item">Salsa</td>
+                <td class="price">$2.50</td>
+            </tr>
+            <tr>
+                <!-- Row 3 -->
+                <td class="item">Arroz</td>
+                <td class="price">$2.50</td>
+            </tr>
+            <tr>
+                <!-- Row 4 -->
+                <td class="item">Frijoles</td>
+                <td class="price">$2.50</td>
+            </tr>
+            <tr>
+                <!-- Row 5 -->
+                <td class="item">Arroz y Frijoles</td>
+                <td class="price">$4.00</td>
+            </tr>
+            <tr>
+                <!-- Row 6 -->
+                <td class="item">Crema</td>
+                <td class="price">$1.15</td>
+            </tr>
+            <tr>
+                <!-- Row 7 -->
+                <td class="item">Aguacate</td>
+                <td class="price">$1.25.</td>
+            </tr>
+            <tr>
+                <!-- Row 8 -->
+                <td class="item">Papas Fritas</td>
+                <td class="price">$2.50</td>
+            </tr>
+            <tr>
+                <!-- Row 9 -->
+                <td class="item">Cebollitas y Toreados</td>
+                <td class="price">$3.50</td>
+            </tr>
+            <tr>
+                <!-- Row 10 -->
+                <td class="item">Salsa y Zanahorias</td>
+                <td class="price">25&cent;</td>
+            </tr>
+        </table>
+
+    </main>
+
+
+    <footer>
+
+        <div class="social">
+            <a href="https://www.facebook.com/pages/Tequila-Restaurant/613538648731101" target="_blank"><img src="images/facebook-icon.png" height="50" width="50" alt="Facebook logo" /></a>
+            <a href="https://www.grubhub.com/restaurant/tequila-restaurant-6225-west-79th-street-burbank/1575668?affiliate=1185&amp;utm_source=bing-affiliate-network&amp;utm_medium=affiliate&amp;utm_campaign=1185&amp;utm_content=1575668" target="_blank"><img src="images/grubhub-icon.png" height="50" width="50" alt="Grubhub logo" /></a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Patrick Ruckman Creative, LLC. 2021. All Rights Reserved.</p>
+            <p>If you have any questions or comments please contact the <a href="mailto:b.p.ruckman90@gmail.com">webmaster</a>. </p>
+            <a href="project_files.html">Project Files</a>
+        </div>
+
+    </footer>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
